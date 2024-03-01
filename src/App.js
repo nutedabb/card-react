@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "./components/Container";
+import CardLogo from "./components/CardLogo";
+import Limage from "./components/Limage";
+import img1 from "./assets/TwitterIcon.png";
+import img2 from "./assets/FacebookIcon.png";
+import img3 from "./assets/InstagramIcon.png";
+import img4 from "./assets/GitHubIcon.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <CardLogo />
+      <Container />
+      <div className="footer">
+        <Limage img={img1} />
+        <Limage img={img2} />
+        <Limage img={img3} />
+        <Limage img={img4} />
+      </div>
     </div>
   );
 }
